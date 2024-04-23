@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #001422;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    position: absolute;
+}
+.circle-1{
+    background-image: radial-gradient(#FED0FF,#7F00FF);
+    height: 120px;
+    width: 120px;
+    top: 10%;
+    left: 15%;
+}
+.circle-2{
+    background-image: radial-gradient(#FF00C7,#BD95FF,#A661FF,#6100FF);
+    height: 360px;
+    width: 360px;
+}
+.circle-3{
+    background-image: radial-gradient(#FED0FF,#7F00FF);
+    height: 200px;
+    width: 200px;
+}
+.card{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.23);
+    position: relative;
+    backdrop-filter: blur(3px);
+}
