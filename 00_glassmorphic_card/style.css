@@ -44,7 +44,7 @@ body{
     position: relative;
 }
 .card{
-    height: 500px;
+    /* height: 500px; */
     max-width: 350px;
     background-color: rgba(255, 255, 255, 0.23);
     backdrop-filter: blur(3px);
@@ -75,9 +75,15 @@ body{
     padding: 2px 6px;
     border-radius: 5px;
 }
+.heart-tag{
+    cursor: pointer;
+}
 .card-p{
     font-size: 0.7rem;
     font-weight: 500;
+}
+.ratting{
+    padding-bottom: 0.5rem;
 }
 .ratting span{
     font-style: italic;
@@ -96,4 +102,5 @@ body{
     border-top:1px solid rgba(255, 255, 255, 0.53);
     color: #fcfbfb;
     line-height:3;
+    cursor: pointer;
 }
