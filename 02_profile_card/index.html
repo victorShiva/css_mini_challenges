@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="top-strip">
+    </div>
+    <div class="container">
+        <div class="profile-card">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="icons">
+                <i class="fa-regular fa-heart"></i>
+                <i onclick="navigator.share({url:location.href})" class="fa-solid fa-share share-icon"></i>
+            </div>
+            <div class="profile-content">
+                <div class="avatar">
+                    <img src="../image/apple.jpg" alt="avatar" class="avatar-img">
+                    <div class="green-dot"></div>
+                </div>
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Frontend-Developer</p>
+                <button class="btn">
+                    <a href="#">View Full Profile</a>
+                </button>
+                <div class="social-icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
