@@ -31,6 +31,10 @@ body{
     height: 100%;
     margin-top: 1rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .content .left-side::before{
     content: '';
@@ -70,6 +74,9 @@ body{
     font-weight: 600;
     color:#3e2093;
 }
+.content .right-side p{
+    text-align: justify;
+}
 .content .right-side .input-box{
     height: 3.5rem;
     width: 100%;
@@ -88,7 +95,11 @@ body{
 }
 .right-side .message-box{
     min-height: 110px;
-    margin-top: 6px;
+}
+.right-side .button{
+    /* display: inline-block; */
+    margin-top: 1rem;
+
 }
 .right-side .button input[type="button"]{
     color: #fff;
@@ -103,4 +114,39 @@ body{
 }
 .button input[type="button"]:hover{
     background-color: #5029bc;
+}
+@media (max-width:950px) {
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+@media (max-width:810px) {
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .right-side .button input[type="button"]{
+        width: 100%;
+    }
+    .content .right-side .topic-text {
+        text-align: center;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side::before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
 }
